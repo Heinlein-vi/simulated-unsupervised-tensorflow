@@ -8,6 +8,7 @@ from model import Model
 from buffer import Buffer
 import data.gaze_data as gaze_data
 import data.hand_data as hand_data
+import data.boxes_data as boxes_data
 from utils import imwrite, imread, img_tile
 
 
@@ -32,6 +33,7 @@ class Trainer(object):
         DataLoader = {
             'gaze': gaze_data.DataLoader,
             'hand': hand_data.DataLoader,
+            'boxes': boxes_data.DataLoader,
         }[config.data_set]
         self.data_loader = DataLoader(config, rng=self.rng)
 

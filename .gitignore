@@ -1,9 +1,14 @@
 # Data
 data/hand
 data/gaze
+data/boxes
 data/*.png
+data/*.jpg
 samples
 outputs
+
+*.png
+*.jpg
 
 # Log
 logs
